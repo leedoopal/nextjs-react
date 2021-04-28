@@ -1,9 +1,13 @@
-function Todo() {
+function Todo(props) {
+  function deleteHandler() {
+    console.log(props.text);
+  }
+
   return (
     <div className={'card'}>
-      <h2>Learn React</h2>
+      <h2>{props.text}</h2>
       <div className={'action'}>
-        <button className={'btn'}>Delete</button>
+        <button className={'btn'} onClick={deleteHandler}>Delete</button>
       </div>
     </div>
   )
