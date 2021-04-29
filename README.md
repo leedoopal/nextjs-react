@@ -19,7 +19,9 @@
 - 두번째 파라미터인 inputs를 통해 특정한 상태가 update 되었을 때만 effect가 실행되도록 설정 가능
 <br/>
 - effect 함수의 return 값이 있는 경우 hook의 <strong>cleanup 함수로 인식 -> 다음 effect가 실행되기 전에 실행</strong>
+<br/>
 - cleanup 함수는 <strong>새로운 effect 실행 전 매번 호출</strong>
+<br/>
 - inputs에 빈 배열을 넘겨주게 되면 unmount 될 때 1번만 실행
 <br/><br/>
   
