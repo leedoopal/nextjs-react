@@ -7,6 +7,23 @@ const FavoritesContext = createContext({
 
 function FavoritesContextProvider(props) {
   const [userFavorites, setUserFavorites] = useState([]);
+
+  function addFavoritesHandler(favoriteMeetup) {
+    setUserFavorites((prevUserFavorites) => {
+      return prevUserFavorites.concat(favoriteMeetup);
+    });
+  }
+
+  function removeFavoriteHandler(meetupID) {
+    setUserFavorites((prevUserFavorites) => {
+      return prevUserFavorites.filter((meetup) => meetup.id !== meetupID);
+    });
+  }
+
+  function itemIsFavoriteHandler(meetupID) {
+    return userFavorites.some((meetup) => meetup.id === meetupID);
+  }
+
   const context = {
     favorites: userFavorites,
     totalFavorites: userFavorites.length,
