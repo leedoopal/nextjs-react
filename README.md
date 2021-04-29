@@ -5,7 +5,6 @@
 ### 1. useState
 - 함수 컴포넌트 안에서 state를 사용할 수 있음(상태값 업데이트가 가능)
 <br/>
-<br/>
 - initialState를 파라미터로 받는다.
 <br/>
 - state와 state를 변경할 setState 함수를 반환
@@ -16,7 +15,6 @@
 ### 2. useEffect
 - vuejs에서 mount와 unmount 같은 life cycle API 대신 사용하는 것
 - 렌더링 완료 후 실행 || 어떤 값이 변경되었을 경우 실행
-<br/>
 <br/>
 - 두번째 파라미터인 inputs를 통해 특정한 상태가 update 되었을 때만 effect가 실행되도록 설정 가능
 <br/>
@@ -79,4 +77,4 @@ function MeetupItem(props) {
 }
 ```
 FavoritesContext가 공통으로 사용하는 store이다. 요럴때 쓰는 것 같다
-- <strong>The useContext hook only takes the context object itself as a parameter.</strong>
+- 주의! <strong>The useContext hook only takes the context object itself as a parameter.</strong>
