@@ -1,7 +1,4 @@
-# nextjs 공부 중
-<br/>
-
-## 그 전에 react hook 정리하기
+## react hook 정리하기
 
 ### 1. useState
 - 함수 컴포넌트 안에서 state를 사용할 수 있음(상태값 업데이트가 가능)
